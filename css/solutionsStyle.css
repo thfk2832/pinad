@@ -1,0 +1,67 @@
+:root{
+    --black:black;
+    --white:white;
+}
+.bo{
+    border: 1px solid red;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+ol li, ul li{
+    list-style: none;
+}
+.center{
+    position: absolute;
+    left: 50%;
+}
+/* --------------------solution section(1)_main-------------------- */
+section#main .container-fluid{
+    background: url(../img/solution/solutionMain.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 870px;
+    margin-top: 69px;
+    color: white;
+}
+/* main text 위치 */
+section#main .mainLine{
+    margin-top: 300px;
+}
+section#main .mainTitle h2{
+    font-size: 6em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section#main .mainContent{
+    padding-top: 30px;
+}
+section#main .mainContent p{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* --------------------solution section(2) services01-------------------- */
+section#services01{
+    padding: 100px;
+}
+section#services01 .textTitle01 .col-3{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+section#services01 .textTitle01 .col-9{
+    font-weight: 700;
+    font-size: 2em;
+}
+section#services01 .textTitle01 .offset-5{
+    margin-top: 60px;
+    line-height: 25px;
+    font-weight: 200;
+    font-size: 15px;
+}
+section#services01 .textTitle01 .hr{
+    padding-top: 60px;
+    border-bottom: 1px solid black;
+}
+section#services01 .textTitle01 .col-3{}

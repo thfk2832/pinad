@@ -1,0 +1,25 @@
+:root{
+    --black:black;
+    --white:white;
+}
+.bo{
+    border: 1px solid red;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+ol li, ul li{
+    list-style: none;
+}
+.center{
+    position: absolute;
+    left: 50%;
+}
+/* --------------------cases section(1)_main-------------------- */
+/* --------------------services section(1)_main-------------------- */
+section#main .row{
+    /* height: 880px; */
+    overflow: hidden;
+    margin-top: 30px;
+}

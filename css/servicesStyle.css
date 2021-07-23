@@ -1,0 +1,137 @@
+:root{
+    --black:black;
+    --white:white;
+}
+.bo{
+    border: 1px solid red;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+ol li, ul li{
+    list-style: none;
+}
+.center{
+    position: absolute;
+    left: 50%;
+}
+
+
+/* --------------------services section(1)_main-------------------- */
+section#main .row{
+    /* height: 880px; */
+    overflow: hidden;
+    margin-top: 30px;
+}
+/* --------------------services section(2)_clients-------------------- */
+/* text */
+section#clients .title, section#cases .title{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+section#clients .content, section#cases .content{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* 클라이언트 로고들 */
+section#clients .client-list{
+    margin-top: 50px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+section#clients .client-item{
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+section#clients .client-item::after{
+    content: "";
+    background: url(../img/services/circle.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    /* top: 83px; */
+    bottom: -6px;
+    right: -6px;
+}
+section#clients .client-item img{
+    border-right: 1.8px solid var(--black);
+    border-bottom: 1.8px solid var(--black);
+}
+
+/* --------------------services section(3)_Cases-------------------- */
+section#cases{
+    margin-top: 150px;
+}
+/* hover효과 */
+section#cases .row:nth-of-type(2){
+    margin-top: 70px;
+}
+section#cases .row:nth-of-type(2), section#cases .row:nth-of-type(3), section#cases .row:nth-of-type(4){
+    line-height: 57px;
+}
+
+section#cases .casesNumber{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    color: #929292;
+}
+section#cases .casesTitle{
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-left: 0;
+    cursor: pointer;
+    padding-left: 15px;
+}
+section#cases .casesTitle span{
+    font-size: 0.6em;
+    font-weight: 700;
+    color: #929292;
+}
+section#cases .row:nth-of-type(2) .casesImg{
+    background: url(../img/services/cases.png) no-repeat;
+    background-position: center;
+}
+section#cases .row:nth-of-type(3) .casesImg{
+    background: url(../img/services/cases.png) no-repeat;
+    background-position: center;
+}
+section#cases .row:nth-of-type(4) .casesImg{
+    background: url(../img/services/cases.png) no-repeat;
+    background-position: center;
+}
+section#cases .hr{
+    border-bottom: 1.8px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+section#cases .hr::before{
+    content: "";
+    position: absolute;
+    background: url(../img/services/square.png);
+    width: 15px;
+    height: 15px;
+    display: block;
+    left: 0;
+    bottom: -7.5px;
+}
+section#cases .viewMore{
+    margin-top: 50px;
+    cursor: pointer;
+}
+section#cases .viewMore img{
+    padding-left: 15px;
+}
+section#cases .viewMore:hover img{
+    content: url("../img/services/viewMoreHover.png");
+}
+

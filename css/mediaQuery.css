@@ -1,0 +1,105 @@
+/* 메인관련 미디어쿼리 */
+
+@media all and (max-width:991px){
+    /* 네비게이션 */
+    #top .navbar-nav{
+        padding-top: 30px;
+    }
+    #top .nav-link{
+        border: none;
+        border-radius: 15px 0 0 15px;
+    }
+    #top ul.navbar-nav li{
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    /* footer */
+    footer .row_touch div{
+        font-size: 4.7em;
+    }
+}
+/* 기본 틀 */
+/*media query*/
+/* xl */
+@media (min-width: 1400px) {
+    
+}
+
+@media (min-width: 1200px) {
+    /* 클라이언트 로고 보더수정 */
+    section#clients .client-item:nth-of-type(9) img, section#clients .client-item:nth-of-type(10) img, section#clients .client-item:nth-of-type(11) img, section#clients .client-item:nth-of-type(12) img{
+        border-bottom: none;
+    }
+    section#clients .client-item:nth-of-type(4) img, section#clients .client-item:nth-of-type(8) img, section#clients .client-item:nth-of-type(12) img{
+        border-right: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    /* 클라이언트 로고 보더수정 */
+    section#clients .client-item:nth-of-type(10) img, section#clients .client-item:nth-of-type(11) img, section#clients .client-item:nth-of-type(12) img{
+        border-bottom: none;
+    }
+    section#clients .client-item:nth-of-type(3) img, section#clients .client-item:nth-of-type(6) img, section#clients .client-item:nth-of-type(9) img, section#clients .client-item:nth-of-type(12) img{
+        border-right: none;
+    }
+}
+
+@media (max-width:992px){
+    /* 클라이언트 로고 보더수정 */
+    section#clients .client-item:nth-of-type(11) img, section#clients .client-item:nth-of-type(12) img{
+        border-bottom: none;
+    }
+    section#clients .client-item:nth-of-type(2n) img{
+        border-right: none;
+    }
+    /* clint/cases fontsize */
+    section#clients .title, section#cases .title{
+        font-size: 1em;
+    }
+    section#clients .content, section#cases .content{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:768px){
+    /* cases fonstsize */
+    section#cases .casesNumber{
+        font-size: 1em;
+    }
+    section#cases .casesTitle{
+        font-size: 1.8em;
+    }
+    section#cases .casesTitle span{
+        font-size: 0.6em;
+    }
+}
+@media (max-width:576px){
+    /* cases  */
+    section#cases .row:nth-of-type(2), section#cases .row:nth-of-type(3), section#cases .row:nth-of-type(4){
+        line-height: 25px;
+    }
+    /* cases hr sytle */
+    section#cases .hr{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 479px){
+    /* 클라이언트 로고 보더수정 */
+    section#clients .client-item img{
+        border-right: none;
+    }
+    /* 메인이미지 위치 */
+    section#main .row{
+        margin-top: 30px;
+    }
+    /* cases fonstsize */
+    section#cases .casesTitle{
+        font-size: 1.5em;
+    }
+    section#cases .casesTitle span{
+        font-size: 0.6em;
+    }
+
+}
